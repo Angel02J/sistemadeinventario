@@ -10,7 +10,7 @@ export default function Entradas(){
 
     useEffect(() => {
         const fetchEntradas = async () => {
-            const response = await fetch('https://localhost:44314/api/Entradas/ObtenerEntradas');
+            const response = await fetch('https://app-mesa-sistemadeinventario-api-prod.azurewebsites.net/api/Entradas/ObtenerEntradas');
             const data = await response.json();
             console.log("Datos recibidos de la API de entradas:", data);
             setEntradas(data);
